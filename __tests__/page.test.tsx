@@ -4,11 +4,11 @@ import { describe, expect, it } from "vitest";
 import Home from "@/app/page";
 
 describe("Home page", () => {
-  it("renders the main heading", () => {
+  it("renders the About Me heading", () => {
     render(<Home />);
     expect(
       screen.getByRole("heading", {
-        name: /to get started, edit the page\.tsx file\./i,
+        name: /about me/i,
       }),
     ).toBeInTheDocument();
   });
