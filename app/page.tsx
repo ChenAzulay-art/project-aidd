@@ -35,9 +35,9 @@ const socialLinks = [
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex w-full max-w-3xl flex-1 flex-col items-center gap-10 bg-white px-6 py-20 sm:items-start sm:px-12 dark:bg-black">
-        <div className="relative h-44 w-44 shrink-0 overflow-hidden rounded-full border-2 border-zinc-200 bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-900">
+    <div className="flex flex-col flex-1 items-center justify-center bg-background font-sans">
+      <main className="flex w-full max-w-3xl flex-1 flex-col items-center gap-10 bg-background px-6 py-20 sm:items-start sm:px-12">
+        <div className="relative h-44 w-44 shrink-0 overflow-hidden rounded-full border-2 border-zinc-300 bg-zinc-100 dark:border-zinc-600 dark:bg-zinc-900">
           {/* Replace public/profile.svg with your photo (e.g. profile.jpg) and update src */}
           <Image
             src="/profile.svg"
@@ -49,10 +49,10 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col items-center gap-5 text-center sm:items-start sm:text-left">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl dark:text-zinc-50">
+          <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
             About Me
           </h1>
-          <p className="max-w-2xl text-lg leading-relaxed text-zinc-700 dark:text-zinc-300">
+          <p className="max-w-2xl text-lg leading-relaxed text-foreground/80">
             My name is Chen Azulay Stavisky, I am a driven software developer
             and a 3rd-year Computer Science student at the Holon Institute of
             Technology (HIT). I bring a unique blend of analytical thinking and
@@ -72,7 +72,7 @@ export default function Home() {
         </Link>
 
         <div className="w-full">
-          <p className="mb-3 text-sm font-medium uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+          <p className="mb-3 text-sm font-medium uppercase tracking-wide text-foreground/60">
             Connect with me
           </p>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
